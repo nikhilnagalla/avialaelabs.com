@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://api.avialaelabs.com http://127.0.0.1:8092; base-uri 'none'; form-action 'none'; manifest-src 'self'">
 <meta name="referrer" content="no-referrer">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0b0d14" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f8f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
 <title>Avialae Labs · EVIE</title>
 <meta name="description" content="Avialae Labs builds technology that steps off the screen and into the physical world. Our first product, EVIE, is a home assistant you just talk to. Request early access.">
 <meta property="og:title" content="Avialae Labs · EVIE">
@@ -24,7 +24,7 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Avialae Labs, top of page">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#0b0d14"/><path d="M10 38c8-2 14-8 22-18 2 8 5 12 22 14-12 1-18 4-22 12-5-6-11-8-22-8z" fill="#f2a65a"/></svg>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1f1b16"/><path d="M10 38c8-2 14-8 22-18 2 8 5 12 22 14-12 1-18 4-22 12-5-6-11-8-22-8z" fill="#f2a65a"/></svg>
       Avialae Labs
     </a>
     <nav class="links" aria-label="Main">
@@ -39,96 +39,120 @@
   <section class="hero" id="top">
     <div class="wrap">
       <div>
-        <p class="kicker">EVIE, from Avialae Labs</p>
-        <h1>A home that finally responds back.</h1>
-        <p class="lede">EVIE is a home assistant that steps off the screen and into your house. There's nothing to learn. Talk to it, and it turns on the old TV, warms the room, books dinner and keeps the family's week straight.</p>
+        <p class="kicker"><span class="light" aria-hidden="true"></span>EVIE, the first product from Avialae Labs</p>
+        <h1>A home that finally responds back</h1>
+        <p class="lede">Talk to EVIE the way you'd talk to a person. It turns on the fifteen-year-old TV, warms the room, books Friday's dinner and keeps the family's week straight, without an app to learn.</p>
         <div class="cta">
           <a class="btn" href="#join">Request Access</a>
           <a class="btn secondary" href="#mission">Read the Mission</a>
         </div>
       </div>
-      <div class="chat" role="img" aria-label="Example conversation. You: I'm cold. EVIE: Heat's going up to 72. Sweater optional. You: Turn on the news. EVIE: Your TV's on, channel 4. You: Anything from school? EVIE: The field-trip form is due Thursday. It's on the calendar.">
-        <div class="head" aria-hidden="true"><span class="dot"></span> EVIE · Living room</div>
-        <div class="msg you" aria-hidden="true"><span class="who">You</span>I'm cold.</div>
-        <div class="msg evie" aria-hidden="true"><span class="who">EVIE</span>Heat's going up to 72. Sweater optional.</div>
-        <div class="msg you" aria-hidden="true"><span class="who">You</span>Turn on the news.</div>
-        <div class="msg evie" aria-hidden="true"><span class="who">EVIE</span>Your TV's on, channel 4. It's older than some of my code, and it still listens.</div>
-        <div class="msg you" aria-hidden="true"><span class="who">You</span>Anything from school?</div>
-        <div class="msg evie" aria-hidden="true"><span class="who">EVIE</span>The field-trip form is due Thursday. It's on the calendar.</div>
+
+      <div class="room" role="img" aria-label="A living room at night. An old wood-cased TV is showing the Channel 4 evening news, and a small EVIE hub with an amber light sits below it. In the chat, you say you're cold and EVIE turns the heat up to 72, then you ask for the news and EVIE switches the TV to channel 4.">
+        <div class="tv" aria-hidden="true">
+          <div class="tv-body">
+            <div class="screen">
+              <span class="channel">CH 4</span>
+              <span class="anchor"></span>
+              <span class="desk"></span>
+              <span class="lower">Evening news · Live</span>
+            </div>
+            <div class="knobs"><i></i><i></i><b></b></div>
+          </div>
+          <div class="tv-legs"><i></i><i></i></div>
+        </div>
+        <div class="hub" aria-hidden="true"><span class="light"></span>EVIE hub · IR sent</div>
+        <div class="chat" aria-hidden="true">
+          <div class="head"><span class="light"></span>EVIE · Living room</div>
+          <p class="msg you">I'm cold</p>
+          <p class="msg evie">Heat's going up to 72. Sweater optional.</p>
+          <p class="msg you">Turn on the news</p>
+          <p class="msg evie">Channel 4 is on. That TV is older than some of my code, and it still listens.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="mission" id="mission">
     <div class="wrap">
-      <h2>Our mission</h2>
+      <h2 class="label">Our mission</h2>
       <blockquote>
         Avialae Labs builds technology that steps beyond the screen and into the physical world, so everyone, at any age and with any comfort with tech, can live with machines that understand them, act for them, and keep what's theirs private.
       </blockquote>
-      <div class="pillars-3">
+      <dl class="beliefs">
         <div>
-          <h3>Meet people where they are</h3>
-          <p>Homes are full of speakers, thermostats, TVs and locks, each with its own app and login. The features are there; using them is the hard part. We build for the grandparent with five remotes, not just the early adopter.</p>
+          <dt>Meet people where they are</dt>
+          <dd>Homes are full of speakers, thermostats, TVs and locks, each with its own app and login. The features are there; using them is the hard part. We build for the grandparent with five remotes, not just the early adopter.</dd>
         </div>
         <div>
-          <h3>Act, don't just answer</h3>
-          <p>Today's assistants set timers and answer trivia, and running a household is still manual. Our technology does the thing: the device, the booking, the reminder, the follow-through.</p>
+          <dt>Act, don't just answer</dt>
+          <dd>Today's assistants set timers and answer trivia, and running a household is still manual. Our technology does the thing: the device, the booking, the reminder, the follow-through.</dd>
         </div>
         <div>
-          <h3>Keep what's yours</h3>
-          <p>A capable assistant shouldn't need your whole life in someone else's cloud. The thinking stays on your own devices by default, and nothing personal leaves them without asking.</p>
+          <dt>Keep what's yours</dt>
+          <dd>A capable assistant shouldn't need your whole life in someone else's cloud. The thinking stays on your own devices by default, and nothing personal leaves them without asking.</dd>
         </div>
-      </div>
+      </dl>
       <p class="name-note"><i>Avialae</i> is the scientific name for the group that includes every flying bird. We're a multidisciplinary lab, and EVIE is our first product. We start in the living room, and over time we'll aim higher.</p>
     </div>
   </section>
 
   <section id="evie">
     <div class="wrap">
-      <div class="head-block">
-        <h2>Meet EVIE.</h2>
-        <p>Say what you want the way you'd say it to a person. EVIE works out the rest, with a dry sense of humor and none of the menus.</p>
+      <div class="intro">
+        <h2>Say it the way you'd say it</h2>
+        <p>No commands to memorize and no menus. EVIE works out what you mean, does it, and answers with a dry sense of humor.</p>
       </div>
       <div class="says">
-        <div class="say"><q>I'm cold.</q><p>Turns up the thermostat.</p></div>
-        <div class="say"><q>Turn on the news.</q><p>Switches on a 15-year-old TV through infrared, no smart TV needed.</p></div>
-        <div class="say"><q>Movie night.</q><p>Dims the lights and starts the TV.</p></div>
-        <div class="say"><q>Book dinner Friday for four.</q><p>Makes the restaurant reservation.</p></div>
-        <div class="say"><q>Anything from school?</q><p>Reads the school emails so nobody misses the field-trip form.</p></div>
-        <div class="say"><q>Where's my package?</q><p>Tracks the delivery and says when it's at the door.</p></div>
+        <div class="say"><q>I'm cold</q><p>Turns up the thermostat</p></div>
+        <div class="say"><q>Turn on the news</q><p>Switches on a 15-year-old TV through infrared</p></div>
+        <div class="say"><q>Movie night</q><p>Dims the lights and starts the TV</p></div>
+        <div class="say"><q>Book dinner Friday for four</q><p>Makes the restaurant reservation</p></div>
+        <div class="say"><q>Anything from school?</q><p>Finds the field-trip form in the school emails</p></div>
+        <div class="say"><q>Where's my package?</q><p>Tracks the delivery and says when it's at the door</p></div>
       </div>
 
-      <div class="pillars">
-        <div class="pillar">
-          <h3>Works with the home you have</h3>
-          <p>Wi-Fi lights and plugs, Google Nest, Philips Hue, SmartThings, Home Assistant and more, plus older TVs, fans and air conditioners through EVIE's infrared hub. Your home doesn't have to be "smart."</p>
+      <div class="promises">
+        <div class="promise lead">
+          <div>
+            <h3>Works with the home you have</h3>
+            <p>Your home doesn't have to be "smart." EVIE talks to Wi-Fi lights and plugs and the big platforms, and its infrared hub learns the remotes for older TVs, fans and air conditioners.</p>
+          </div>
+          <div class="devices" aria-label="Some of what EVIE works with">
+            <span>Google Nest</span><span>Philips Hue</span><span>SmartThings</span><span>Home Assistant</span>
+            <span>Sonos</span><span>Roku</span><span>Any IR remote</span>
+          </div>
         </div>
-        <div class="pillar">
+        <div class="promise">
           <h3>Private by default</h3>
-          <p>EVIE's AI runs on your own computer. Only genuinely hard questions go to the cloud, one request at a time, and EVIE asks before anything personal leaves. Monitoring is off unless you turn it on.</p>
+          <p>EVIE's AI runs on your own computer. Only genuinely hard questions go to the cloud, one at a time, and it asks before anything personal leaves.</p>
         </div>
-        <div class="pillar">
+        <div class="promise">
           <h3>Nothing to set up</h3>
-          <p>One installer. Connecting an account means signing in, with no technical setup and nobody to call. Many devices are found automatically.</p>
+          <p>One installer. Connecting an account means signing in, and many devices are found on their own.</p>
         </div>
-        <div class="pillar">
+        <div class="promise">
           <h3>Careful with what matters</h3>
-          <p>Locks, garage doors, alarms and cameras always need a spoken "yes," and EVIE never touches them on its own. Up to four people can share a household, each with private data.</p>
+          <p>Locks, garage doors, alarms and cameras always need a spoken "yes," and EVIE never touches them on its own.</p>
+        </div>
+        <div class="promise">
+          <h3>One household, four people</h3>
+          <p>Everyone gets their own private data, under one roof.</p>
         </div>
       </div>
 
-      <div class="status">
-        <div><h3>Today</h3><p>EVIE runs on Mac. Our own family are its first testers.</p></div>
-        <div><h3>Next</h3><p>A small early-access group in real homes, and the iPhone app.</p></div>
-        <div><h3>Then</h3><p>Apple Watch, Windows, Linux and Android, and the EVIE home hub.</p></div>
+      <div class="road">
+        <div class="stop now"><h3>Today</h3><p>EVIE runs on Mac. Our own family are its first testers</p></div>
+        <div class="stop"><h3>Next</h3><p>A small early-access group in real homes, and the iPhone app</p></div>
+        <div class="stop"><h3>Then</h3><p>Apple Watch, Windows, Linux and Android, and the EVIE home hub</p></div>
       </div>
     </div>
   </section>
 
   <section class="join" id="join">
     <div class="wrap">
-      <div class="head-block">
-        <h2>Bring EVIE home first.</h2>
+      <div class="intro">
+        <h2>Bring EVIE home first</h2>
         <p>A small group of households will help shape EVIE. Tell us a little about you and what you'd want from a home assistant. Every answer gets read.</p>
       </div>
 

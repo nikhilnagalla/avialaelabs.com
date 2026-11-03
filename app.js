@@ -62,9 +62,12 @@
     box.className = "done";
     box.id = "done";
     box.tabIndex = -1;
-    box.innerHTML = '<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2.5" opacity=".3"/><path d="M14 25l7 7 13-15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    var light = document.createElement("span");
+    light.className = "light";
+    light.setAttribute("aria-hidden", "true");
+    box.appendChild(light);
     var title = document.createElement("h3");
-    title.textContent = "Request received, " + name.split(" ")[0] + ".";
+    title.textContent = "Request received, " + name.split(" ")[0];
     var text = document.createElement("p");
     text.textContent = "Thanks for telling us what you need. Homes are invited in small groups, and an email will arrive when there's a spot for yours.";
     box.appendChild(title);
